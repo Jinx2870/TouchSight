@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TouchSight · GitHub Pages 测试</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
+        background:
+          radial-gradient(circle at top left, #2a4a7a 0%, transparent 40%),
+          radial-gradient(circle at bottom right, #1b3d36 0%, transparent 35%),
+          #0c1118;
+        color: #e8eef6;
+      }
+
+      main {
+        width: min(560px, calc(100% - 32px));
+        padding: 32px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        background: rgba(16, 24, 36, 0.78);
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      }
+
+      p {
+        margin: 0 0 12px;
+        line-height: 1.7;
+        color: #c5d0dd;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 2rem;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-bottom: 16px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: #2f6fed;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+      }
+
+      time {
+        color: #8ea0b5;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="badge">GitHub Pages</span>
+      <h1>TouchSight 部署测试</h1>
+      <p>如果你能看到这个页面，说明仓库根目录的 <code>index.html</code> 已经成功发布到 GitHub Pages。</p>
+      <p><time id="now"></time></p>
+    </main>
+    <script>
+      document.getElementById("now").textContent =
+        "页面加载时间：" + new Date().toLocaleString("zh-CN");
+    </script>
+  </body>
+</html>
